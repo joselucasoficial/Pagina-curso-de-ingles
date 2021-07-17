@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscrição</title>
+
+</head>
+
+<body>
+    <header id="cab">
+        <img src="./imgs/logo.jpg" alt="logo">
+        <div id="social">
+            <a href="https://www.linkedin.com/in/zezin/"><img src="./imgs/in.png" alt="in"></a>
+            <a href="https://github.com/joselucasoficial"><img src="./imgs/git.png" alt="git"></a>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="./home.html" target="_self">Home</a></li>
+                <li><a href="./modulos.html" target="_self">Módulos</a></li>
+                <li><a href="#" target="_self">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br class="fixFloat">
+
+    <section id="inscricao">
+        <form name="fContact" method="POST" action="#">
+            <label for="">Nome</label>
+            <input type="text" maxlength="50" size="60" name="fName" autofocus required>
+
+            <label for="">Telefone de Contato</label>
+            <input type="tel" maxlength="15" size="20" name="fPhone" placeholder="(xx) x xxxx-xxxx" required>
+
+            <label for="">Email de Contato</label>
+            <input type="email" maxlength="50" size="60" name="fEmail" required>
+
+            <label for="">CEP</label>
+            <input type="text" maxlength="10" size="15" name="fCep" placeholder="xxxxx-xxx" pattern="\d{5}-?\d{3}" required>
+
+            <label for="">Nivel</label>
+            <input type="number" min="1" max="10" step="1" value="1" name="fModulo" required>
+
+            <label for="">Horário</label>
+            <input type="time" value="10:00" step="1800" name="fHorario" required>
+
+            <label for="">Escolha uma Cor para sua Pasta</label>
+            <input type="color" name="fCor" value="#008800" required>
+
+            <label for="">Data de Nascimento</label>
+            <input type="date" name="fNascimento" required>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restaurar">
+        </form>
+    </section>
+
+    <br class="fixFloat">
+
+
+</body>
+
+</html>
